@@ -6,7 +6,7 @@
         </div>
 
         <div class="right-section">
-            <a href="#" class="header-link">Home</a>
+            <a href="#" class="header-link red">Home</a>
             <a href="#" class="header-link">About Us</a>
             <a href="#" class="header-link">Facilities</a>
             <a href="#" class="header-link">Membership</a>
@@ -62,6 +62,15 @@ export default {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+    font-family: Arial, sans-serif;
+    /* Imposta il tipo di font */
+    text-transform: uppercase;
+    /* Trasforma il testo in maiuscolo */
+}
+
+.header-link.red {
+    color: red;
+    /* Imposta il colore del testo a rosso per la classe red */
 }
 
 .header-link:hover {

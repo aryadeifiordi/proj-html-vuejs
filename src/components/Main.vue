@@ -1,7 +1,7 @@
 <template>
     <main>
-        <h1>Welcome to our website!</h1>
-        <p>This is the main content of our website.</p>
+        <h1>NO PAIN NO GAIN</h1>
+        <p>Motivation is what gets you started. Habit is what keeps you going.</p>
     </main>
 </template>
 
@@ -13,7 +13,9 @@ export default {
 
 <style scoped>
 main {
-    background-color: black;
+    background-image: url('./img/images/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     position: fixed;
@@ -27,5 +29,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-size: 6rem;
 }
 </style>
