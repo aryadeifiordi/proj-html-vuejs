@@ -1,7 +1,6 @@
 <template>
     <header class="header-container">
         <div class="left-section">
-
             <img src="./img/images/gym_logo_1x.png" alt="Avada Gym Logo" class="logo">
         </div>
 
@@ -14,6 +13,11 @@
             <a href="#" class="header-link">Blog</a>
         </div>
     </header>
+
+    <main class="main-content">
+        <h1>NO PAIN NO GAIN</h1>
+        <p>Motivation is what gets you started. Habit is what keeps you going.</p>
+    </main>
 </template>
 
 <script>
@@ -24,7 +28,10 @@ export default {
 
 <style scoped>
 .header-container {
-    background-color: transparent;
+    background-image: url('./img/images/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     width: 100%;
     position: fixed;
     top: 0;
@@ -33,6 +40,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 800px;
+
 }
 
 .left-section {
@@ -49,7 +58,6 @@ export default {
 
 .logo {
     height: 40px;
-
 }
 
 .header-link {
@@ -62,10 +70,17 @@ export default {
 
 .header-link.red {
     color: red;
-
 }
 
 .header-link:hover {
     text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 6rem;
 }
 </style>
