@@ -1,23 +1,23 @@
 <template>
     <header class="header-container">
-        <div class="left-section">
+        <div class="logo-container">
             <img src="./img/images/gym_logo_1x.png" alt="Avada Gym Logo" class="logo">
         </div>
 
+        <div class="header-text-container">
+            <h1 class="header-title">NO PAIN NO GAIN</h1>
+            <p>Motivation is what gets you started. Habit is what keeps you going.</p>
+        </div>
+
         <div class="right-section">
-            <a href="#" class="header-link red">Home</a>
-            <a href="#" class="header-link">About Us</a>
-            <a href="#" class="header-link">Facilities</a>
-            <a href="#" class="header-link">Membership</a>
-            <a href="#" class="header-link">Testimonials</a>
-            <a href="#" class="header-link">Blog</a>
+            <router-link to="/" class="header-link red">Home</router-link>
+            <router-link to="/about" class="header-link">About Us</router-link>
+            <router-link to="/facilities" class="header-link">Facilities</router-link>
+            <router-link to="/membership" class="header-link">Membership</router-link>
+            <router-link to="/testimonials" class="header-link">Testimonials</router-link>
+            <router-link to="/blog" class="header-link">Blog</router-link>
         </div>
     </header>
-
-    <main class="main-content">
-        <h1>NO PAIN NO GAIN</h1>
-        <p>Motivation is what gets you started. Habit is what keeps you going.</p>
-    </main>
 </template>
 
 <script>
@@ -33,31 +33,27 @@ export default {
     background-position: center;
     color: white;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    height: 400px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 800px;
-
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.left-section {
-    display: flex;
-    align-items: center;
+.logo-container {
+    margin-top: 20px;
 }
 
 .right-section {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px;
+    margin-top: 20px;
 }
 
 .logo {
     height: 40px;
+}
+
+.header-title {
+    margin-bottom: 10px;
 }
 
 .header-link {
@@ -74,13 +70,5 @@ export default {
 
 .header-link:hover {
     text-decoration: underline;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 6rem;
 }
 </style>

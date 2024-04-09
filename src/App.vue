@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :menuItems="headerMenuItems" />
+    <Header />
     <Main />
     <Footer :menuItems="footerMenuItems" />
   </div>
@@ -20,21 +20,27 @@ export default {
   },
   data() {
     return {
-      headerMenuItems: [
-        { label: 'Home', link: '/' },
-        { label: 'About', link: '/about' },
-        { label: 'Services', link: '/services' }
-
-      ],
       footerMenuItems: [
         { label: 'Privacy Policy', link: '/privacy' },
         { label: 'Terms of Service', link: '/terms' },
         { label: 'Contact Us', link: '/contact' }
-
       ]
     };
   }
 };
 </script>
 
-<style></style>
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+</style>

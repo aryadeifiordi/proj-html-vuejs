@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="footer-container">
         <nav>
             <ul>
                 <li v-for="item in menuItems" :key="item.label">
