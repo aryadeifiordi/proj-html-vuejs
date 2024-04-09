@@ -16,6 +16,7 @@
             <router-link to="/membership" class="header-link">Membership</router-link>
             <router-link to="/testimonials" class="header-link">Testimonials</router-link>
             <router-link to="/blog" class="header-link">Blog</router-link>
+
         </div>
     </header>
 </template>
@@ -29,24 +30,38 @@ export default {
 <style scoped>
 .header-container {
     background-image: url('./img/images/home-banner.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     color: white;
     width: 100%;
-    height: 400px;
+    height: 1500px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .logo-container {
     margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header-text-container {
+    height: 300px;
+    width: 600px;
+    margin-top: 800px;
+    text-align: center;
 }
 
 .right-section {
     margin-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
 }
+
 
 .logo {
     height: 40px;
@@ -57,15 +72,19 @@ export default {
 }
 
 .header-link {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    margin-left: 20px;
+    margin-bottom: 20px;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
 }
 
 .header-link.red {
     color: red;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+
 }
 
 .header-link:hover {
