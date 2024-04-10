@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.main-container {
+/*.main-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -48,5 +48,5 @@ export default {
     color: white;
     padding: 20px;
     margin-bottom: 10px;
-}
+}*/
 </style>

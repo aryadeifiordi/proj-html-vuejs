@@ -1,24 +1,28 @@
 <template>
-    <header class="header-container">
-        <div class="logo-container">
-            <img src="./img/images/gym_logo_1x.png" alt="Avada Gym Logo" class="logo">
-        </div>
+    <div class="container-background">
 
-        <div class="header-text-container">
-            <h1 class="header-title">NO PAIN NO GAIN</h1>
-            <p>Motivation is what gets you started. Habit is what keeps you going.</p>
-        </div>
 
-        <div class="right-section">
-            <router-link to="/" class="header-link red">Home</router-link>
-            <router-link to="/about" class="header-link">About Us</router-link>
-            <router-link to="/facilities" class="header-link">Facilities</router-link>
-            <router-link to="/membership" class="header-link">Membership</router-link>
-            <router-link to="/testimonials" class="header-link">Testimonials</router-link>
-            <router-link to="/blog" class="header-link">Blog</router-link>
+        <header class="header-container">
+            <div class="logo-container">
+                <img src="/public/img/images/gym_logo_1x.png" alt="Avada Gym Logo" class="logo">
+            </div>
 
-        </div>
-    </header>
+            <!--<div class="header-text-container">
+                <h1 class="header-title">NO PAIN NO GAIN</h1>
+                <p>Motivation is what gets you started. Habit is what keeps you going.</p>
+            </div> -->
+
+            <div class="right-section">
+                <router-link to="/" class="header-link red">Home</router-link>
+                <router-link to="/about" class="header-link">About Us</router-link>
+                <router-link to="/facilities" class="header-link">Facilities</router-link>
+                <router-link to="/membership" class="header-link">Membership</router-link>
+                <router-link to="/testimonials" class="header-link">Testimonials</router-link>
+                <router-link to="/blog" class="header-link">Blog</router-link>
+
+            </div>
+        </header>
+    </div>
 </template>
 
 <script>
@@ -28,38 +32,49 @@ export default {
 </script>
 
 <style scoped>
-.header-container {
-    background-image: url('./img/images/home-banner.jpg');
-    background-size: 100%;
+.container-background {
+    background-image: url(./img/images/home-banner.jpg);
+    background-size: cover;
     background-position: center;
+    height: 80vh;
+}
+
+.header-container {
+    height: 20vh;
     color: white;
     width: 100%;
-    height: 1500px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    margin-top: 56rem;
 }
 
-.logo-container {
+/*.logo-container {
     margin-top: 20px;
     margin-left: 20px;
-}
+}*/
 
 .header-text-container {
-    height: 300px;
+    align-self: center;
+
+    /*height: 300px;
     width: 600px;
     margin-top: 800px;
-    text-align: center;
+    text-align: center;*/
 }
 
 .right-section {
     margin-top: 20px;
     margin-right: 20px;
-    background-color: white;
-    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    /*padding: 10px;
     width: 400px;
-    height: 200px;
+    height: 200px;*/
 }
 
 
@@ -72,7 +87,7 @@ export default {
 }
 
 .header-link {
-    color: #000;
+    color: white;
     text-decoration: none;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
