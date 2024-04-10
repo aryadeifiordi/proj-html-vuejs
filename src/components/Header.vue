@@ -4,13 +4,13 @@
 
         <header class="header-container">
             <div class="logo-container">
-                <img src="/public/img/images/gym_logo_1x.png" alt="Avada Gym Logo" class="logo">
+                <img src="/public/img/images/gym_logo_2x.png" alt="Avada Gym Logo" class="logo">
             </div>
 
-            <!--<div class="header-text-container">
+            <div class="header-text-container">
                 <h1 class="header-title">NO PAIN NO GAIN</h1>
                 <p>Motivation is what gets you started. Habit is what keeps you going.</p>
-            </div> -->
+            </div>
 
             <div class="right-section">
                 <router-link to="/" class="header-link red">Home</router-link>
@@ -49,18 +49,12 @@ export default {
     margin-top: 56rem;
 }
 
-/*.logo-container {
-    margin-top: 20px;
-    margin-left: 20px;
-}*/
 
 .header-text-container {
-    align-self: center;
 
-    /*height: 300px;
-    width: 600px;
-    margin-top: 800px;
-    text-align: center;*/
+    width: 10rem;
+    margin-top: 15rem;
+    margin-left: 15rem;
 }
 
 .right-section {
@@ -72,14 +66,15 @@ export default {
     width: 550px;
     display: flex;
     justify-content: space-between;
-    /*padding: 10px;
-    width: 400px;
-    height: 200px;*/
+
 }
 
 
 .logo {
-    height: 40px;
+    align-self: flex-start;
+    height: 80px;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .header-title {
