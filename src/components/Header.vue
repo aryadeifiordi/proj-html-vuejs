@@ -34,13 +34,13 @@ export default {
 <style scoped>
 .container-background {
     background-image: url(./img/images/home-banner.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
+    background-size: 100%;
+    background-position: center top;
+    height: 60vh;
 }
 
 .header-container {
-    height: 20vh;
+    height: 100vh;
     color: white;
     width: 100%;
     display: flex;
@@ -52,18 +52,21 @@ export default {
 
 .header-text-container {
 
-    width: 10rem;
-    margin-top: 15rem;
-    margin-left: 15rem;
+    width: 80rem;
+    margin-top: 20rem;
+    margin-left: 10rem;
+    max-height: calc(100vh - 30rem);
+    overflow-y: auto;
+
 }
 
 .right-section {
-    margin-top: 20px;
+    margin-top: 10rem;
     margin-right: 20px;
     background-color: black;
     color: white;
     height: 20px;
-    width: 550px;
+    flex: 1;
     display: flex;
     justify-content: space-between;
 
@@ -74,11 +77,12 @@ export default {
     align-self: flex-start;
     height: 80px;
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 .header-title {
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 .header-link {
