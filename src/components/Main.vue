@@ -8,7 +8,7 @@
         </div>
         <div class="signup-section">
             <div>
-                <img src="/public/img/images/home_img-compressor-200x111.jpg" alt="">
+                <img src="/public/img/images/home_img-compressor-400x222.jpg" alt="">
             </div>
             <div>
                 <p>Sign Up For A Free Training Session!</p>
@@ -20,6 +20,7 @@
                     <label for="surname">Surname</label>
                     <input type="text" id="surname">
                 </div>
+                <button class="start-button">Start Now</button>
             </div>
         </div>
         <div>
@@ -84,5 +85,20 @@ export default {
 
 .input-group input {
     width: 200px;
+}
+
+.start-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: darkred;
 }
 </style>
