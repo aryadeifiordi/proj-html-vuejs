@@ -88,16 +88,22 @@ export default {
 .header-link {
     color: white;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 5px;
+    white-space: nowrap;
+
 }
 
 .header-link.red {
-    color: red;
+    color: #EE6059;
     text-decoration: none;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    padding: 5px;
 
 }
 

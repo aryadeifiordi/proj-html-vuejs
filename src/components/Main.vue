@@ -23,8 +23,10 @@
                 <button class="start-button">Start Now</button>
             </div>
         </div>
-        <div>
-            <h1>strength condition</h1>
+        <div class="focal-points">
+            <h1>
+                strenght
+            </h1>
         </div>
         <div>
             <h1>real world results</h1>
@@ -60,7 +62,7 @@ export default {
 }
 
 .highlighted-section {
-    background-color: #333;
+    background-color: #25292b;
     color: white;
     padding: 20px;
 }
@@ -70,7 +72,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #999999;
 }
 
 .input-group {
@@ -88,7 +90,7 @@ export default {
 }
 
 .start-button {
-    background-color: red;
+    background-color: #EE6059;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -100,5 +102,12 @@ export default {
 
 .start-button:hover {
     background-color: darkred;
+}
+
+.focal-points {
+    height: 10vh;
+    background-size: cover;
+
+    background-image: url(./img/images/gym_bkgd_bw-compressor.jpg);
 }
 </style>
