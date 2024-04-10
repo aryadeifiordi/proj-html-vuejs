@@ -7,8 +7,14 @@
             <p>At Avada Gym, everything we dofrom top to bottom is of the highest quality to ensure we're equipped to
                 help youreach your goals of a healthy and fit lifestyle</p>
         </div>
-        <div>
-            <h1>signup</h1>
+        <div class="signup-section">
+            <div>
+                <img src="/public/img/images/home_img-compressor-200x111.jpg" alt="">
+            </div>
+            <div>
+                <h1>Sign Up For A Free Training Session!</h1>
+
+            </div>
         </div>
         <div>
             <h1>strength condition</h1>
@@ -41,16 +47,23 @@ export default {
 </script>
 
 <style scoped>
-/*.main-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+}
 
 .highlighted-section {
     background-color: #333;
     color: white;
     padding: 20px;
     margin-bottom: 10px;
+}
+
+.signup-section {
+    display: flex;
+    background-color: grey;
+    align-items: center;
+
 }
 </style>
